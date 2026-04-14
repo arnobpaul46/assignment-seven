@@ -21,17 +21,17 @@ const Navbar = () => {
                         </label>
                         <ul className="menu menu-sm dropdown-content mt-3  p-2 shadow bg-base-200 rounded-box w-40">
                             <li>
-                                <button onClick={() => setActive("home")} className={active === "home" ? "bg-green-500 text-white rounded-md" : ""}>
+                                <button onClick={() => setActive("home")} className={active === "home" ? "bg-success text-black rounded-md" : ""}>
                                     <House size={16} /> Home
                                 </button>
                             </li>
                             <li>
-                                <button onClick={() => setActive("timeline")} className={active === "timeline" ? "bg-green-500 text-white rounded-md" : ""}>
+                                <button onClick={() => setActive("timeline")} className={active === "timeline" ? "bg-success text-black rounded-md" : ""}>
                                     <Clock3 size={16} /> Timeline
                                 </button>
                             </li>
                             <li>
-                                <button onClick={() => setActive("stats")} className={active === "stats" ? "bg-green-500 text-white rounded-md" : ""}>
+                                <button onClick={() => setActive("stats")} className={active === "stats" ? "bg-success text-black rounded-md" : ""}>
                                     <ChartLine size={16}  /> Stats
                                 </button>
                             </li>
