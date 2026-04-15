@@ -27,23 +27,23 @@ function App({ friends }) {
         <div className="mt-8 w-[80%] mx-auto bg-base-100 ">
 
             {/*  Stats Section */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div className="card bg-base-200 p-6 text-center shadow">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 ">
+                <div className="card bg-base-200 p-6 text-center shadow hover:bg-base-300">
                     <h2 className="text-2xl font-bold">{friends.length}</h2>
                     <p>Total Friends</p>
                 </div>
 
-                <div className="card bg-base-200 p-6 text-center shadow">
+                <div className="card bg-base-200 p-6 text-center shadow hover:bg-base-300">
                     <h2 className="text-2xl font-bold">{onTrackCount}</h2>
                     <p>On Track</p>
                 </div>
 
-                <div className="card bg-base-200 p-6 text-center shadow">
+                <div className="card bg-base-200 p-6 text-center shadow hover:bg-base-300">
                     <h2 className="text-2xl font-bold">{onOverdue}</h2>
                     <p>Need Attention</p>
                 </div>
 
-                <div className="card bg-base-200 p-6 text-center shadow">
+                <div className="card bg-base-200 p-6 text-center shadow hover:bg-base-300">
                     <h2 className="text-2xl font-bold">12</h2>
                     <p>Interactions This Month</p>
                 </div>
@@ -53,10 +53,10 @@ function App({ friends }) {
             <div>
                 <h2 className="text-xl font-semibold mb-4">Your Friends</h2>
 
-                <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 1">
 
                     {friends.map((friend, index) => (
-                        <div key={index} className="card bg-base-200 shadow p-6 text-center">
+                        <div key={index} className="card bg-base-200 shadow p-6 text-center hover:scale-105">
 
                             {/* Picture */}
                             <div className="avatar mx-auto mb-3">

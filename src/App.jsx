@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './component/Navbar/Navbar'
-import Hero from './component/Hero/Hero'
-import StatsWithFriends from './component/StatsWithFriends/StatsWithFriends'
+import { Outlet } from 'react-router-dom' // এটি যোগ করতে হবে
 
-const Hello  = () => {
-  const [friends, setFriends]=useState([])
+const App = () => {
+  const [friends, setFriends] = useState([])
+
   useEffect(() => {
-  fetch("/friends.json")
-    .then(res => res.json())
-    .then(data => setFriends(data));
-}, []);
+    fetch("/friends.json")
+      .then(res => res.json())
+      .then(data => setFriends(data));
+  }, []);
+
   return (
     <>
-    <Navbar/>
-    <Hero/>
-    <StatsWithFriends friends={friends}/>
+      <Navbar />
+
+      <Outlet context={[friends]} /> 
     </>
   )
 }
 
-export default Hello 
+export default App
