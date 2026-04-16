@@ -28,17 +28,17 @@ const StatsWithFriends = () => {
                 </div>
 
                 <div className="card bg-base-200 p-6 text-center shadow hover:bg-base-300">
-                    <h2 className="text-2xl font-bold">{onTrackCount}</h2>
+                    <h2 className="text-2xl font-bold text-success">{onTrackCount}</h2>
                     <p>On Track</p>
                 </div>
 
                 <div className="card bg-base-200 p-6 text-center shadow hover:bg-base-300">
-                    <h2 className="text-2xl font-bold">{onOverdue}</h2>
+                    <h2 className="text-2xl font-bold text-error">{onOverdue}</h2>
                     <p>Need Attention</p>
                 </div>
 
                 <div className="card bg-base-200 p-6 text-center shadow hover:bg-base-300">
-                    <h2 className="text-2xl font-bold">12</h2>
+                    <h2 className="text-2xl font-bold">{friends.length}</h2>
                     <p>Interactions This Month</p>
                 </div>
             </div>

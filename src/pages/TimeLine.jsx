@@ -50,7 +50,7 @@ const TimeLine = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-lg">
-                  {event.type} <span className="font-normal text-gray-500">with {event.friendName}</span>
+                  {event.type} <span className="font-normal text-gray-500">with <span className="text-success">{event.friendName}</span></span>
                 </h3>
                 <p className="text-sm text-gray-400">{event.date}</p>
               </div>
