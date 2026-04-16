@@ -3,7 +3,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recha
 import { useOutletContext } from 'react-router-dom';
 import { PacmanLoader } from 'react-spinners';
 
-const FriendshipAnalytics = () => {
+const Stats = () => {
 
   const [friends, timeline,, isLoading] = useOutletContext();
 
@@ -77,4 +77,4 @@ const FriendshipAnalytics = () => {
   );
 };
 
-export default FriendshipAnalytics;
+export default Stats;
