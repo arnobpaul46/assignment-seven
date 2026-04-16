@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../component/Hero/Hero'
-import StatsWithFriends from '../component/StatsWithFriends/StatsWithFriends'
+import Hero from '../Component/Hero/Hero'
+import StatsWithFriends from '../Component/StatsWithFriends/StatsWithFriends'
 import { useOutletContext } from 'react-router-dom' 
 
 const Home = () => {
