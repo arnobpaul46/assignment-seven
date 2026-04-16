@@ -66,7 +66,7 @@ const FriendDetails = () => {
                     <div className="card" >
                         <div className="w-full mt-5 space-y-2">
                             <button className="btn btn-outline btn-sm w-full flex gap-2 hover:border-success">
-                                <Bell size={16} /> Snooze
+                                <Bell size={16} /> Snooze 2 Weeks
                             </button>
 
                             {/* Archive button */}
@@ -116,18 +116,18 @@ const FriendDetails = () => {
                     <div className="card bg-base-100 shadow p-5 hover:shadow-lg transition">
                         <h3 className="font-semibold mb-3 text-2xl">Quick Check-In</h3>
                         <div className="grid grid-cols-3 gap-3">
-                            <button onClick={() => { addTimelineEvent("Call", friend.name);toast.success(` ${friend.name} is calling you`,{
+                            <button onClick={() => { addTimelineEvent("Call", friend.name);toast.success(` Call with ${friend.name} `,{
                                 position: "top-center"
                             });  }} className="btn btn-outline flex flex-col h-18 hover:scale-105 hover:border-success transition">
                                 <Phone size={20} /> Call
                                 
                             </button>
-                            <button onClick={() => { addTimelineEvent("Text", friend.name);  toast.success(` ${friend.name} is Texting you`,{
+                            <button onClick={() => { addTimelineEvent("Text", friend.name);  toast.success(` Text with ${friend.name} `,{
                                 position: "top-center"
                             }); }} className="btn btn-outline flex flex-col h-18 hover:scale-105 hover:border-success transition">
                                 <MessageSquare size={20} /> Text
                             </button>
-                            <button onClick={() => { addTimelineEvent("Video", friend.name); toast.success(` ${friend.name} is Video calling you`,{
+                            <button onClick={() => { addTimelineEvent("Video", friend.name); toast.success(` Video with ${friend.name} `,{
                                 position: "top-center"
                             }); }} className="btn btn-outline flex flex-col h-18 hover:scale-105 hover:border-success transition">
                                 <Video size={20} /> Video
