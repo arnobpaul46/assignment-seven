@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './component/Navbar/Navbar'
-import { Outlet } from 'react-router-dom' // এটি যোগ করতে হবে
+import { Outlet } from 'react-router-dom' 
 
 const App = () => {
   const [friends, setFriends] = useState([])
@@ -10,6 +10,7 @@ const App = () => {
       .then(res => res.json())
       .then(data => setFriends(data));
   }, []);
+  
 
   return (
     <>
