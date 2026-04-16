@@ -32,7 +32,7 @@ const FriendshipAnalytics = () => {
                 
                 <h3 className="text-lg font-semibold text-success mb-2">By Interaction Type</h3>
                 
-                <div className="w-full h-[350px]">
+                <div className="w-full h-87">
                     <ResponsiveContainer width="100%" height="100%">
                         <PieChart>
                             <Pie

@@ -41,7 +41,7 @@ const TimeLine = () => {
       {/* Timeline  */}
       <div className="space-y-4">
         {filteredTimeline.length === 0 ? (
-          <p className="text-gray-500 italic">No {filter !== "All Interactions" ? filter.toLowerCase() : ""} interactions found.</p>
+          <p className="text-gray-500 text-3xl italic">No {filter !== "All Interactions" ? filter.toLowerCase() : ""} interactions found.</p>
         ) : (
           filteredTimeline.map((event) => (
             <div key={event.id} className="flex items-center gap-4 p-4 border border-blue-400 border-dashed rounded-md bg-base-100 hover:shadow-md transition">

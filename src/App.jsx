@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './component/Navbar/Navbar'
 import { Outlet } from 'react-router-dom' 
+import Footer from './component/Footer/Footer'
 
 const App = () => {
   const [friends, setFriends] = useState([])
@@ -27,6 +28,8 @@ const App = () => {
       <Navbar />
 
       <Outlet context={[friends, timeline, addTimelineEvent]} /> 
+      
+      <Footer/>
     </>
   )
 }
