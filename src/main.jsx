@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import TimeLine from './pages/TimeLine.jsx'
 import Stats from './pages/Stats.jsx'
 import FriendDetails from './component/FriendDetails/FriendDetails.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 
 
@@ -35,9 +36,13 @@ const router = createBrowserRouter([
       {
         path: "/stats",
         element: <Stats />
-      }
+      },
     ]
   },
+  {
+    path: "*",
+    element: <NotFound />
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(

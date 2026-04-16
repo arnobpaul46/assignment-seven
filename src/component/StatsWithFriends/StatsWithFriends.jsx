@@ -50,7 +50,7 @@ const StatsWithFriends = () => {
 
             {/*  Friends Section  */}
             <div>
-                <h2 className="text-xl font-semibold mb-4">Your Friends</h2>
+                <h2 className="text-2xl md:text-4xl font-semibold mb-4">Your Friends</h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 

@@ -9,7 +9,7 @@
     "tags": ["work", "startup"],
     "bio": "Worked together at a fintech startup. We used to brainstorm product ideas late at night.",
     "goal": 14,
-    "next_due_date": "2025-07-10"
+    "next_due_date": "July 10, 2025"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "tags": ["family"],
     "bio": "My cousin. We usually catch up during holidays and family dinners.",
     "goal": 14,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "July 18, 2025"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "tags": ["work", "design"],
     "bio": "UX designer colleague. We collaborate on creative projects and design reviews.",
     "goal": 14,
-    "next_due_date": "2025-07-25"
+    "next_due_date": "July 25, 2025"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "tags": ["gym", "hobby"],
     "bio": "Met at the gym. We used to train together every weekend.",
     "goal": 14,
-    "next_due_date": "2025-07-12"
+    "next_due_date": "July 12, 2025"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "tags": ["travel", "close friend"],
     "bio": "Travel buddy. We've explored multiple countries together and plan trips often.",
     "goal": 14,
-    "next_due_date": "2025-07-23"
+    "next_due_date": "July 23, 2025"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "tags": ["college", "roommate"],
     "bio": "College roommate. We still talk about old campus memories.",
     "goal": 14,
-    "next_due_date": "2025-07-19"
+    "next_due_date": "July 19, 2025"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "tags": ["school", "friend"],
     "bio": "School friend. We stay connected through regular chats and meetups.",
     "goal": 14,
-    "next_due_date": "2025-07-27"
+    "next_due_date": "July 27, 2025"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "tags": ["business", "mentor"],
     "bio": "Business mentor who guided me in early career decisions.",
     "goal": 14,
-    "next_due_date": "2025-07-14"
+    "next_due_date": "July 14, 2025"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "tags": ["college", "best friend"],
     "bio": "Best friend from university. We still share daily life updates.",
     "goal": 14,
-    "next_due_date": "2025-07-24"
+    "next_due_date": "July 24, 2025"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "tags": ["work", "project"],
     "bio": "Project teammate from software development team.",
     "goal": 14,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "July 20, 2025"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "tags": ["family", "cousin"],
     "bio": "Cousin who lives in another city but we stay in touch regularly.",
     "goal": 14,
-    "next_due_date": "2025-07-26"
+    "next_due_date": "July 26, 2025"
   },
   {
     "id": 12,
@@ -141,6 +141,6 @@
     "tags": ["gym", "friend"],
     "bio": "Gym partner. We used to train together every morning.",
     "goal": 14,
-    "next_due_date": "2025-07-08"
+    "next_due_date": "July 08, 2025"
   }
 ]
