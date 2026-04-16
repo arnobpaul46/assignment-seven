@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from './component/Navbar/Navbar'
+import Navbar from './Component/Navbar/Navbar'
 import { Navigate, Outlet, useLocation, useNavigate } from 'react-router-dom'
-import Footer from './component/Footer/Footer'
+import Footer from './Component/Footer/Footer'
 import { ToastContainer } from 'react-toastify'
 
 const App = () => {

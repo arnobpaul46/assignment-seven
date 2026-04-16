@@ -3,11 +3,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './pages/Home.jsx'
-import TimeLine from './pages/TimeLine.jsx'
-import Stats from './pages/Stats.jsx'
-import FriendDetails from './component/FriendDetails/FriendDetails.jsx'
-import NotFound from './pages/NotFound.jsx'
+import Home from './Page/Home.jsx'
+import TimeLine from './Page/TimeLine.jsx'
+import Stats from './Page/Stats.jsx'
+import FriendDetails from './Component/FriendDetails/FriendDetails.jsx'
+import NotFound from './Page/NotFound.jsx'
 
 
 
