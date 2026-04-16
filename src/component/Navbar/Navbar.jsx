@@ -16,7 +16,7 @@ const Navbar = () => {
 
                 {/* Left */}
                 <div className="flex-1">
-                    <NavLink to="/" className="text-lg md:text-xl font-bold">Keen<span className="text-success">Keeper</span></NavLink>
+                    <NavLink to="/" className="text-2xl md:text-3xl font-bold">Keen<span className="text-success">Keeper</span></NavLink>
                 </div>
 
                 {/* Mobile Section */}

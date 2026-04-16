@@ -4,6 +4,8 @@ import { Outlet } from 'react-router-dom'
 
 const App = () => {
   const [friends, setFriends] = useState([])
+  const [timeline, setTimeline] = useState([])
+
 
   useEffect(() => {
     fetch("/friends.json")
@@ -11,12 +13,20 @@ const App = () => {
       .then(data => setFriends(data));
   }, []);
   
-
+  const addTimelineEvent = (type, friendName) => {
+    const newEvent = {
+      id: Date.now(),
+      type,
+      friendName,
+      date: new Date().toLocaleDateString()
+    };
+    setTimeline([newEvent, ...timeline]); 
+  };
   return (
     <>
       <Navbar />
 
-      <Outlet context={[friends]} /> 
+      <Outlet context={[friends, timeline, addTimelineEvent]} /> 
     </>
   )
 }
