@@ -1,16 +1,25 @@
-import React, { useState } from 'react' 
+import React, { useState } from 'react'
 import { useOutletContext } from 'react-router-dom';
 import { Phone, MessageSquare, Video, History } from 'lucide-react';
+import { PacmanLoader } from 'react-spinners';
 
 const TimeLine = () => {
-  const [friends, timeline] = useOutletContext();
-  
+  const [friends, timeline,, isLoading] = useOutletContext();
+
 
   const [filter, setFilter] = useState("All Interactions");
 
+
+  if (isLoading) return (
+    <div className="flex justify-center items-center min-h-[60vh]">
+      <PacmanLoader color="#36d7b7" />
+    </div>
+  );
+
+
   const filteredTimeline = timeline.filter(event => {
     if (filter === "All Interactions") return true;
-    return event.type === filter; 
+    return event.type === filter;
   });
 
   const getIcon = (type) => {
@@ -26,10 +35,10 @@ const TimeLine = () => {
 
       {/* Filter dropdown */}
       <div className="mb-8">
-        <select 
+        <select
           className="select select-bordered w-full max-w-xs bg-base-200"
           value={filter}
-          onChange={(e) => setFilter(e.target.value)} 
+          onChange={(e) => setFilter(e.target.value)}
         >
           <option value="All Interactions">All Interactions</option>
           <option value="Call">Calls</option>

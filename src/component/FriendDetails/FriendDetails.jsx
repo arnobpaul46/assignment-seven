@@ -1,10 +1,18 @@
 import React from "react";
 import { useParams, useOutletContext } from "react-router-dom";
 import { Phone, MessageSquare, Video, Bell, Archive, Trash2 } from "lucide-react";
+import { PacmanLoader } from "react-spinners";
+import { toast } from "react-toastify";
 
 const FriendDetails = () => {
     const { id } = useParams();
-    const [friends, timeline, addTimelineEvent] = useOutletContext();
+    const [friends, timeline, addTimelineEvent, isLoading] = useOutletContext();
+
+    if (isLoading) return (
+        <div className="flex justify-center items-center min-h-[60vh]">
+            <PacmanLoader color="#36d7b7" />
+        </div>
+    );
 
 
     const friend = friends.find(f => f.id === Number(id));
@@ -29,8 +37,8 @@ const FriendDetails = () => {
 
                         {/* status */}
                         <div className={`badge mt-2 py-3 px-4  border-none ${friend.status === 'overdue' ? 'bg-error text-white' :
-                                friend.status === 'almost due' ? 'bg-warning text-white' :
-                                    'bg-success text-white'
+                            friend.status === 'almost due' ? 'bg-warning text-white' :
+                                'bg-success text-white'
                             }`}>
                             {friend.status}
                         </div>
@@ -108,13 +116,20 @@ const FriendDetails = () => {
                     <div className="card bg-base-100 shadow p-5 hover:shadow-lg transition">
                         <h3 className="font-semibold mb-3 text-2xl">Quick Check-In</h3>
                         <div className="grid grid-cols-3 gap-3">
-                            <button  onClick={() =>{ addTimelineEvent("Call", friend.name);alert("added");}} className="btn btn-outline flex flex-col h-18 hover:scale-105 hover:border-success transition">
+                            <button onClick={() => { addTimelineEvent("Call", friend.name);toast.success(` ${friend.name} is calling you`,{
+                                position: "top-center"
+                            });  }} className="btn btn-outline flex flex-col h-18 hover:scale-105 hover:border-success transition">
                                 <Phone size={20} /> Call
+                                
                             </button>
-                            <button onClick={() =>{ addTimelineEvent("Text", friend.name);alert("added");}} className="btn btn-outline flex flex-col h-18 hover:scale-105 hover:border-success transition">
+                            <button onClick={() => { addTimelineEvent("Text", friend.name);  toast.success(` ${friend.name} is Texting you`,{
+                                position: "top-center"
+                            }); }} className="btn btn-outline flex flex-col h-18 hover:scale-105 hover:border-success transition">
                                 <MessageSquare size={20} /> Text
                             </button>
-                            <button onClick={() => {addTimelineEvent("Video", friend.name); alert("added");}} className="btn btn-outline flex flex-col h-18 hover:scale-105 hover:border-success transition">
+                            <button onClick={() => { addTimelineEvent("Video", friend.name); toast.success(` ${friend.name} is Video calling you`,{
+                                position: "top-center"
+                            }); }} className="btn btn-outline flex flex-col h-18 hover:scale-105 hover:border-success transition">
                                 <Video size={20} /> Video
                             </button>
                         </div>

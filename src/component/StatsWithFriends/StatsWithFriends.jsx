@@ -1,9 +1,10 @@
 import React from "react";
 import { useOutletContext, Link } from "react-router-dom";
+import { PacmanLoader } from "react-spinners";
 
 const StatsWithFriends = () => {
     
-    const [friends] = useOutletContext();
+    const [friends,,,isLoading] = useOutletContext();
 
     const getStatusClass = (status) => {
         if (status === "overdue") return "bg-error";
@@ -15,7 +16,11 @@ const StatsWithFriends = () => {
     const onTrackCount = friends?.filter((f) => f.status === "on-track").length || 0;
     const onOverdue = friends?.filter((f) => f.status === "overdue").length || 0;
 
-    if (!friends) return <div className="text-center mt-10">Loading...</div>;
+     if (isLoading) return (
+        <div className="flex justify-center items-center min-h-[40vh]">
+            <PacmanLoader color="#36d7b7" />
+        </div>
+    );
 
     return (
         <div className="mt-8 w-[80%] mx-auto bg-base-100 ">
